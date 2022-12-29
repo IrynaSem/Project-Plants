@@ -8,6 +8,7 @@ body{
     font-family: 'Nunito', sans-serif;
     display: flex;
     justify-content: center;
+    background-color: gainsboro;
 }
     
     .navbar{
@@ -20,7 +21,7 @@ body{
         width: 375px;
         height: 55px;
         @include flex(column, center, space-between);
-        padding: 20px 20px 15px;
+        padding: 20px 20px 15px 20px;
         background: #0C4B35;
 
         .text{
@@ -96,7 +97,61 @@ body{
                     }
 
                 }
-           
+          .nav-bar{
+            width: 375px;
+            height: 70px;
+            @include flex(column, center, space-between);
+            padding: 15px 0px 15px 0px;
+            background-color: white;
+
+            .text2{
+            width: 375px;
+            height: 40px;
+            @include flex(row, center, space-between);
+            padding: 0px 15px;
+            }
+
+            .logo{
+                width: 90px;
+                height: 40px;
+                background-image: url(icons-header/1\ LOGO.svg);
+            }
+
+            .call-menu{
+                width: 110px;
+                height: 34px;
+                @include flex(row, center, space-between);
+
+                .call-button{
+                width: 40px;
+                height: 34px;
+
+                .btn-call{
+                    width: 40px;
+                    height: 34px;
+                    background-image: url(icons-header/phone.svg);   
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color:#00730C;
+                    border-radius: 10px;
+                    border: solid 1px #00730C;
+                }
+                }
+
+                .menu{
+                    width: 30px;
+                    height: 30px; 
+                    background-image: url(icons-header/menu\ \(1\).svg);
+                    background-repeat: no-repeat;
+                   
+
+                }
+
+            }
+
+          }
+                
+
         }    
       
         @media(min-width:1920px){
