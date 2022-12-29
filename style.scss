@@ -1,3 +1,93 @@
+@import "./mixins";
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
 }
+    
+    .navbar{
+    width: 375px;
+    height: 125px;
+    @include flex(column, center, center);
+    padding: 0px;
+
+     .top-navbar{
+        width: 375px;
+        height: 55px;
+        @include flex(column, center, space-between);
+        padding: 20px 20px 15px;
+        background: #0C4B35;
+
+        .text{
+            width: 335px;
+            height: 20px;
+            @include flex(row, center, space-between);
+            padding: 0px;
+           
+
+            .address-phone-location{
+                 width: 100px;
+                  height: 20px;
+                @include flex(row, center, space-between);
+                  padding: 0px;
+        
+                  .mail{
+                     width: 20px;
+                     height: 20px;
+                     @include flex(row, center, center);
+                     padding: 0px;
+                     background-image: url(icons-header/email\ 1.svg);
+                  
+                    }
+                    .phone-call{
+                        width: 20px;
+                         height: 20px;
+                         @include flex(row, center, center);
+                         padding: 0px;
+                         background-image: url(icons-header/phone-call\ 1.svg);
+                        
+                        }
+                        .location{
+                            width: 20px;
+                            height: 20px;@include flex(row, center, center);
+                            padding: 0px;
+                            background-image: url(icons-header/location\ 1.svg);
+                        }
+                    }
+
+                    .language{
+                        width: 90px;
+                        height: 16px;
+                        background-image: url(icons-header/Arrow.svg);
+                        background-repeat: no-repeat;
+                        background-position: right;
+    
+                        .language-menu{
+                            a{
+                                text-decoration: none;
+                                color: white; 
+                                }
+                               
+                                .language-sub-menu{
+                                    opacity: 0;
+                                    visibility: hidden;
+                                }
+                                // .language-menu>li:hover .language-sub-menu{
+                                //     opacity: 1;
+                                //     visibility: visible; 
+                                //     } 
+                            }
+                        }
+                    }
+
+                }
+           
+        }    
+      
+       
+
