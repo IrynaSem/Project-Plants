@@ -35,6 +35,11 @@ body{
                   height: 20px;
                 @include flex(row, center, space-between);
                   padding: 0px;
+
+                  p{
+                    opacity: 0;
+                    visibility: hidden;
+                  }
         
                   .mail{
                      width: 20px;
@@ -42,7 +47,7 @@ body{
                      @include flex(row, center, center);
                      padding: 0px;
                      background-image: url(icons-header/email\ 1.svg);
-                  
+                     background-repeat: no-repeat;
                     }
                     .phone-call{
                         width: 20px;
@@ -50,6 +55,7 @@ body{
                          @include flex(row, center, center);
                          padding: 0px;
                          background-image: url(icons-header/phone-call\ 1.svg);
+                         background-repeat: no-repeat;
                         
                         }
                         .location{
@@ -57,6 +63,7 @@ body{
                             height: 20px;@include flex(row, center, center);
                             padding: 0px;
                             background-image: url(icons-header/location\ 1.svg);
+                            background-repeat: no-repeat;
                         }
                     }
 
@@ -71,6 +78,9 @@ body{
                             a{
                                 text-decoration: none;
                                 color: white; 
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 16.37px;
                                 }
                                
                                 .language-sub-menu{
@@ -89,5 +99,79 @@ body{
            
         }    
       
+        @media(min-width:1920px){
+            .navbar{
+                width: 1920px;
+                height: 144px;
+
+                .top-navbar{
+                    width: 1920px;
+                    height: 59px;
+                    @include flex(row, center, space-between);
+                    padding: 17px 251px;
+                    .text{
+                        width: 1418px;
+                        height: 25px;
+                        @include flex(row, center, space-between);
+                      
+
+                        .address-phone-location{
+                            width: 749px;
+                             height: 25px;
+                            
+                           @include flex(row, center, space-around);
+                        p{
+                            color: white;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 25px;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+
+                        .mail{
+                            width: 281px;
+                            height: 25px;
+
+                            .mail-text{
+                                padding: 0px 10px 0px 20px ;
+                            }
+                           }
+
+                           .phone-call{
+                            width: 140px;
+                             height: 25px;
+
+                            .phone-call-text{
+                                padding: 0px 0px 0px 20px ;
+                            }
+                            
+                            }
+
+                            .location{
+                                width: 268px;
+                                height: 25px;
+                               
+                                .location-text{
+                                    padding: 0px 0px 0px 20px ;
+                                }
+                            }
+                        }
+                        
+                        .language{
+                            height: 25px;
+                           
+                            .language-menu{
+                                a{
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                    }  
+                                }
+                            }      
+                    }
+            } 
+        }
        
 
+    }
+    

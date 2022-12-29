@@ -45,6 +45,10 @@ body {
   justify-content: space-between;
   padding: 0px;
 }
+.navbar .top-navbar .text .address-phone-location p {
+  opacity: 0;
+  visibility: hidden;
+}
 .navbar .top-navbar .text .address-phone-location .mail {
   width: 20px;
   height: 20px;
@@ -54,6 +58,7 @@ body {
   justify-content: center;
   padding: 0px;
   background-image: url(icons-header/email\ 1.svg);
+  background-repeat: no-repeat;
 }
 .navbar .top-navbar .text .address-phone-location .phone-call {
   width: 20px;
@@ -64,6 +69,7 @@ body {
   justify-content: center;
   padding: 0px;
   background-image: url(icons-header/phone-call\ 1.svg);
+  background-repeat: no-repeat;
 }
 .navbar .top-navbar .text .address-phone-location .location {
   width: 20px;
@@ -74,6 +80,7 @@ body {
   justify-content: center;
   padding: 0px;
   background-image: url(icons-header/location\ 1.svg);
+  background-repeat: no-repeat;
 }
 .navbar .top-navbar .text .language {
   width: 90px;
@@ -85,12 +92,79 @@ body {
 .navbar .top-navbar .text .language .language-menu a {
   text-decoration: none;
   color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.37px;
 }
 .navbar .top-navbar .text .language .language-menu .language-sub-menu {
   opacity: 0;
   visibility: hidden;
 }
-.navbar .top-navbar .text .language .language-menu .language-sub-menu a:hover {
-  opacity: 1;
-  visibility: visible;
+
+@media (min-width: 1920px) {
+  .navbar {
+    width: 1920px;
+    height: 144px;
+  }
+  .navbar .top-navbar {
+    width: 1920px;
+    height: 59px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 251px;
+  }
+  .navbar .top-navbar .text {
+    width: 1418px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .top-navbar .text .address-phone-location {
+    width: 749px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navbar .top-navbar .text .address-phone-location p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar .top-navbar .text .address-phone-location .mail {
+    width: 281px;
+    height: 25px;
+  }
+  .navbar .top-navbar .text .address-phone-location .mail .mail-text {
+    padding: 0px 10px 0px 20px;
+  }
+  .navbar .top-navbar .text .address-phone-location .phone-call {
+    width: 140px;
+    height: 25px;
+  }
+  .navbar .top-navbar .text .address-phone-location .phone-call .phone-call-text {
+    padding: 0px 0px 0px 20px;
+  }
+  .navbar .top-navbar .text .address-phone-location .location {
+    width: 268px;
+    height: 25px;
+  }
+  .navbar .top-navbar .text .address-phone-location .location .location-text {
+    padding: 0px 0px 0px 20px;
+  }
+  .navbar .top-navbar .text .language {
+    height: 25px;
+  }
+  .navbar .top-navbar .text .language .language-menu a {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
