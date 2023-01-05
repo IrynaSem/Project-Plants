@@ -90,7 +90,13 @@ body {
   background-repeat: no-repeat;
   background-position: right;
 }
-.navbar .top-navbar .text .language .language-menu a {
+.navbar .top-navbar .text .language .language-menu li:hover .language-sub-menu {
+  opacity: 1;
+  visibility: visible;
+  background-color: #0C4B35;
+  z-index: 1;
+}
+.navbar .top-navbar .text .language .language-menu li a {
   text-decoration: none;
   color: white;
   font-size: 12px;
@@ -152,6 +158,10 @@ body {
   background-color: #00730C;
   border-radius: 10px;
   border: solid 1px #00730C;
+}
+.navbar .nav-bar .text2 .call-menu .call-button .btn-call:hover {
+  background-color: white;
+  background-image: url(icons-header/phone-hover.svg);
 }
 .navbar .nav-bar .text2 .call-menu .call-button .btn-call p {
   opacity: 0;
@@ -230,23 +240,23 @@ body {
     font-size: 14px;
     line-height: 25px;
   }
-  .navbar .top-navbar .nav-bar {
+  .navbar .nav-bar {
     width: 1920px;
     height: 85px;
     padding: 15px 256px 15px 256px;
   }
-  .navbar .top-navbar .nav-bar .text2 {
+  .navbar .nav-bar .text2 {
     width: 1408px;
     height: 55px;
     padding: 0px;
   }
-  .navbar .top-navbar .nav-bar .text2 .logo {
+  .navbar .nav-bar .text2 .logo {
     width: 120px;
     height: 55px;
     background-repeat: no-repeat;
     background-position: center;
   }
-  .navbar .top-navbar .nav-bar .text2 .call-menu {
+  .navbar .nav-bar .text2 .call-menu {
     width: 898px;
     height: 50px;
     display: flex;
@@ -254,17 +264,17 @@ body {
     align-items: center;
     justify-content: space-around;
   }
-  .navbar .top-navbar .nav-bar .text2 .call-menu .web-menu {
+  .navbar .nav-bar .text2 .call-menu .web-menu {
     width: 627px;
     height: 20px;
     opacity: 1;
-    visibility: hidden;
+    visibility: visible;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-  .navbar .top-navbar .nav-bar .text2 .call-menu .web-menu .menu {
+  .navbar .nav-bar .text2 .call-menu .web-menu .menu {
     width: 627px;
     height: 20px;
     display: flex;
@@ -272,7 +282,29 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-  .navbar .top-navbar .nav-bar .text2 .call-menu .call-button {
+  .navbar .nav-bar .text2 .call-menu .web-menu .menu li a {
+    text-decoration: none;
+    color: #212529;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .navbar .nav-bar .text2 .call-menu .web-menu .menu li a span {
+    width: 12px;
+    height: 7px;
+    display: inline-block;
+    background-image: url(icons-header/arrow\ icon-grey.svg);
+    background-repeat: no-repeat;
+    margin-left: 10px;
+  }
+  .navbar .nav-bar .text2 .call-menu .web-menu .menu li a span:hover {
+    color: #00730C;
+    background-image: url(icons-header/arrow\ icon-green.svg);
+  }
+  .navbar .nav-bar .text2 .call-menu .web-menu .menu li a:hover {
+    color: #00730C;
+  }
+  .navbar .nav-bar .text2 .call-menu .call-button {
     width: 170px;
     height: 50px;
     display: flex;
@@ -280,7 +312,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .navbar .top-navbar .nav-bar .text2 .call-menu .call-button .btn-call {
+  .navbar .nav-bar .text2 .call-menu .call-button .btn-call {
     width: 170px;
     height: 50px;
     background-position: 50px center;
@@ -289,17 +321,20 @@ body {
     align-items: center;
     justify-content: flex-start;
   }
-  .navbar .top-navbar .nav-bar .text2 .call-menu .call-button .btn-call p {
+  .navbar .nav-bar .text2 .call-menu .call-button .btn-call p {
     color: white;
     padding: 0px 0px 0px 80px;
     opacity: 1;
     visibility: visible;
   }
-  .navbar .top-navbar .nav-bar .text2 .call-menu .mob-menu {
+  .navbar .nav-bar .text2 .call-menu .call-button .btn-call p:hover {
+    color: #00730C;
+  }
+  .navbar .nav-bar .text2 .call-menu .mob-menu {
     width: 0;
     height: 0;
     opacity: 0;
-    visibility: visible;
+    visibility: hidden;
   }
 }
 .header-content {
@@ -315,6 +350,7 @@ body {
   width: 0px;
   height: 0px;
   opacity: 0;
+  visibility: hidden;
 }
 .header-content .content {
   width: 375px;
@@ -334,6 +370,7 @@ body {
   width: 0px;
   height: 0px;
   opacity: 0;
+  visibility: hidden;
 }
 .header-content .content .text-button-content {
   width: 346px;
@@ -341,7 +378,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .header-content .content .text-button-content .text-content {
   width: 346px;
@@ -359,7 +396,7 @@ body {
   background-image: url(icons-header/Vector.svg);
   background-repeat: no-repeat;
 }
-.header-content .content .text-button-content .text-content .icon-p h6 {
+.header-content .content .text-button-content .text-content .icon-p p {
   font-weight: 700;
   font-size: 14px;
   line-height: 25px;
@@ -373,7 +410,7 @@ body {
 .header-content .content .text-button-content .text-content h1 span {
   color: #00730C;
 }
-.header-content .content .text-button-content .text-content h6 {
+.header-content .content .text-button-content .text-content p {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -425,29 +462,35 @@ body {
 .header-content .content .happy-customrs {
   width: 375px;
   height: 32px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
-.header-content .content .happy-customrs button {
+.header-content .content .happy-customrs .happy {
   width: 135px;
   height: 32px;
   border-radius: 32px;
   border: none;
   background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-.header-content .content .happy-customrs button p {
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 14px;
-}
-.header-content .content .happy-customrs button p span {
+.header-content .content .happy-customrs .happy .p1 {
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
 }
-.header-content .content .happy-customrs .btn-3 {
+.header-content .content .happy-customrs .happy .p2 {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 33px;
+  padding-left: 15px;
+}
+.header-content .content .happy-customrs .happy-100 {
   opacity: 0;
   visibility: hidden;
   width: 55px;
@@ -458,6 +501,7 @@ body {
   .header-content {
     width: 1920px;
     height: 719px;
+    background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -468,11 +512,13 @@ body {
     width: 0px;
     height: 0px;
     opacity: 0;
+    visibility: hidden;
   }
   .header-content .header-img1-web {
     width: 1013px;
     height: 673px;
     opacity: 1;
+    visibility: visible;
     position: absolute;
     top: 46px;
     right: -4px;
@@ -483,8 +529,8 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     padding: 0px 963px 0px 255px;
   }
   .header-content .content .img1 {
@@ -494,9 +540,11 @@ body {
     width: 0px;
     height: 0px;
     opacity: 0;
+    visibility: hidden;
   }
   .header-content .content .img2 {
     opacity: 1;
+    visibility: visible;
     position: absolute;
     top: 300px;
     left: 0px;
@@ -523,7 +571,7 @@ body {
     background-image: url(icons-header/Vector.svg);
     background-repeat: no-repeat;
   }
-  .header-content .content .text-button-content .text-content .icon-p h6 {
+  .header-content .content .text-button-content .text-content .icon-p p {
     color: #212529;
     font-weight: 700;
     font-size: 16px;
@@ -535,11 +583,12 @@ body {
     font-weight: 800;
     line-height: 80px;
   }
-  .header-content .content .text-button-content .text-content h6 {
+  .header-content .content .text-button-content .text-content p {
     color: #676767;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+    padding-right: 100px;
   }
   .header-content .content .text-button-content .button-content {
     width: 696px;
@@ -594,27 +643,31 @@ body {
     align-items: center;
     justify-content: space-around;
   }
-  .header-content .content .happy-customrs button {
+  .header-content .content .happy-customrs .happy {
     width: 149px;
     height: 50px;
-    border-radius: 32px;
-    border: none;
+    background: rgba(0, 128, 0, 0);
+  }
+  .header-content .content .happy-customrs .happy .p1 {
+    width: 50px;
+    height: 40px;
+    display: block;
+    border: solid 1px rgba(0, 128, 0, 0);
     background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
-  }
-  .header-content .content .happy-customrs button p {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 14px;
-  }
-  .header-content .content .happy-customrs button p span {
-    font-size: 12px;
+    border-radius: 50%;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 38px;
+    color: #212529;
   }
-  .header-content .content .happy-customrs .btn-3 {
-    opacity: 0;
-    visibility: hidden;
-    width: 55px;
-    height: 32px;
+  .header-content .content .happy-customrs .happy .p2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #212529;
+  }
+  .header-content .content .happy-customrs .happy-100 {
+    opacity: 1;
+    visibility: visible;
   }
 }/*# sourceMappingURL=style.css.map */
