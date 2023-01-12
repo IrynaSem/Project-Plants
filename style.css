@@ -5,8 +5,10 @@
 body {
   font-family: "Nunito", sans-serif;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  background-color: gainsboro;
+  background-color: rgba(220, 220, 220, 0.438);
 }
 
 .navbar {
@@ -669,5 +671,211 @@ body {
   .header-content .content .happy-customrs .happy-100 {
     opacity: 1;
     visibility: visible;
+  }
+}
+main {
+  background-color: white;
+}
+
+.services {
+  width: 375px;
+  height: 1361px;
+  padding: 50px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.text-services {
+  width: 344px;
+  height: 163px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.text-services h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  font-style: normal;
+  color: #212529;
+}
+.text-services h3 span {
+  color: #00730C;
+}
+.text-services p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #676767;
+  font-style: normal;
+}
+
+.cards-services {
+  width: 345px;
+  height: 1068px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 345px;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  background-image: url(icons-main-services/icon-background.svg);
+  background-repeat: no-repeat;
+  border-radius: 5%;
+  box-shadow: 0px 10px 10px 20px rgba(220, 220, 220, 0.123);
+}
+
+.card-content {
+  width: 305px;
+  height: 76px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-content .icon-size {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card-content .icon-services1 {
+  background-image: url(icons-main-services/Tree\ Planting.svg);
+}
+.card-content .icon-services2 {
+  background-image: url(icons-main-services/Grass\ Cutting.svg);
+}
+.card-content .icon-services3 {
+  background-image: url(icons-main-services/Garden\ Design.svg);
+}
+.card-content .icon-services4 {
+  background-image: url(icons-main-services/Plant\ Growing.svg);
+}
+.card-content .icon-services5 {
+  background-image: url(icons-main-services/Flower\ Scaping.svg);
+}
+.card-content .icon-services6 {
+  background-image: url(icons-main-services/Branch\ cutting.svg);
+}
+.card-content .icon-services7 {
+  background-image: url(icons-main-services/Pests\,\ Weeds\ Control.svg);
+}
+.card-content .icon-services8 {
+  background-image: url(icons-main-services/Watering\ &\ Irrigation.svg);
+}
+.card-content .text-services1 {
+  width: 235px;
+  height: 76px;
+}
+.card-content .text-services1 h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  font-style: normal;
+  color: #212529;
+  padding-bottom: 7px;
+}
+.card-content .text-services1 p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  font-style: normal;
+  color: #676767;
+}
+
+@media (min-width: 1920px) {
+  .services {
+    width: 1920px;
+    height: 1063px;
+  }
+  .text-services {
+    width: 1136px;
+    height: 151px;
+  }
+  .text-services h3 {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 61px;
+  }
+  .text-services p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .cards-services {
+    width: 1410px;
+    height: 762px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 330px;
+    height: 366px;
+    background-image: url(icons-main-services/Icon-background-web.svg);
+    background-position-x: center;
+    background-position-y: 30px;
+  }
+  .card-content {
+    width: 243px;
+    height: 247px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .card-content .icon-size {
+    width: 70px;
+    height: 70px;
+  }
+  .card-content .icon-services2 {
+    background-image: url(icons-main-services/Grass\ Cutting-web.svg);
+  }
+  .card-content .icon-services3 {
+    background-image: url(icons-main-services/Garden\ Design-web.svg);
+  }
+  .card-content .icon-services4 {
+    background-image: url(icons-main-services/Plant\ Growing-web.svg);
+  }
+  .card-content .icon-services5 {
+    background-image: url(icons-main-services/Flower\ Scaping-web.svg);
+  }
+  .card-content .icon-services6 {
+    background-image: url(icons-main-services/Branch\ cutting-web.svg);
+  }
+  .card-content .icon-services7 {
+    background-image: url(icons-main-services/Pests\,\ Weeds\ Control-web.svg);
+  }
+  .card-content .icon-services8 {
+    background-image: url(icons-main-services/Watering\ &\ Irrigation-web.svg);
+  }
+  .card-content .text-services1 {
+    width: 243px;
+    height: 127px;
+  }
+  .card-content .text-services1 h4 {
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .card-content .text-services1 p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
