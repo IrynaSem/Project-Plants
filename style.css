@@ -883,7 +883,7 @@ main {
 .about-us {
   width: 375px;
   height: 1281px;
-  padding: 25px 0px 25px 0px;
+  padding: 30px 0px 30px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1037,8 +1037,8 @@ main {
 @media (min-width: 1920px) {
   .about-us {
     width: 1920px;
-    height: 903px;
-    padding: 0px 0px 0px 0px;
+    height: 1003px;
+    padding: 35px 0px 65px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1153,5 +1153,212 @@ main {
   .btn-about-us span {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+.why-choose-us {
+  width: 375px;
+  height: 684px;
+  background-color: #0C4B35;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(icons-main-why-choose-us/b-g1.svg), url(icons-main-why-choose-us/b-g2.svg);
+  background-repeat: no-repeat;
+  background-position: 225px 0px, 0px 80px;
+}
+
+.content-why-choose-us {
+  width: 345px;
+  height: 584px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.images-why-choose-us {
+  width: 345px;
+  height: 217px;
+}
+.images-why-choose-us .img1-mob {
+  opacity: 1;
+  visibility: visible;
+}
+.images-why-choose-us .img2-web {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.text-button-why-choose-us {
+  width: 345px;
+  height: 337px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-input-content-why-choose-us {
+  width: 345px;
+  height: 267px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-content-why-choose-us {
+  width: 345px;
+  height: 163px;
+}
+.text-content-why-choose-us h3 {
+  font-size: 28px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 38px;
+  color: white;
+  text-align: center;
+}
+.text-content-why-choose-us p {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  color: white;
+  text-align: center;
+}
+
+.input-content-why-choose-us {
+  width: 345px;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.inp-why-choose-us {
+  width: 158px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.inp-why-choose-us label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  color: white;
+}
+
+.button-why-choose-us {
+  width: 167px;
+  height: 40px;
+}
+.button-why-choose-us button {
+  width: 167px;
+  height: 40px;
+  background-color: #00730C;
+  border: 1px solid #00730C;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 1920px) {
+  .why-choose-us {
+    width: 1920px;
+    height: 655px;
+    background-image: url(icons-main-why-choose-us/b-g1\ web.svg), url(icons-main-why-choose-us/b-g2\ web.svg);
+    background-repeat: no-repeat;
+    background-position: 1570px 0px, 0px 60px;
+  }
+  .content-why-choose-us {
+    width: 1410px;
+    height: 455px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .images-why-choose-us {
+    width: 672px;
+    height: 426px;
+    position: relative;
+  }
+  .images-why-choose-us .img1-mob {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .images-why-choose-us .img2-web {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .text-button-why-choose-us {
+    width: 656px;
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .text-input-content-why-choose-us {
+    width: 656px;
+    height: 347px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .text-content-why-choose-us {
+    width: 656px;
+    height: 211px;
+  }
+  .text-content-why-choose-us h3 {
+    font-size: 45px;
+    line-height: 61px;
+    text-align: start;
+    padding-bottom: 30px;
+  }
+  .text-content-why-choose-us p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: start;
+  }
+  .input-content-why-choose-us {
+    width: 600px;
+    height: 86px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .inp-why-choose-us {
+    width: 242px;
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .inp-why-choose-us label {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .button-why-choose-us {
+    width: 190px;
+    height: 58px;
+  }
+  .button-why-choose-us button {
+    width: 190px;
+    height: 58px;
   }
 }/*# sourceMappingURL=style.css.map */
