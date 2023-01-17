@@ -685,6 +685,7 @@ body{
 
         main{
             background-color: white;
+            @include flex(column, center, center);
         }
         .services{
             width: 375px;
@@ -1528,4 +1529,152 @@ background-repeat: no-repeat;
     
         }
     }
+}
+
+.reliable-gardening{
+    width: 375px;
+    height: 284px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    @include flex(column, center, center);
+    position: relative;
+}
+
+.img-reliable-gardening{
+    width: 345px;
+    height: 224px;
+
+    .img1-reliable-gardening{
+        opacity: 1;
+        visibility: visible;
+
+    }
+    .img2-reliable-gardening{
+        opacity: 0;
+        visibility: hidden;
+
+    }
+}
+.text-button-reliable-gardening{
+width: 272px;
+height: 124px;
+@include flex(column, center, space-between);
+position: absolute;
+top: 70px;
+right: 51px;
+}
+
+.text-reliable-gardening{
+width: 272px;
+height: 54px;
+
+    h4{
+        font-size: 20px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 27px;
+        text-align: center;
+        color: white;
+    }
+}
+.button-reliable-gardening{
+ width: 137px;
+ height: 40px;
+ 
+
+ button{
+    width: 137px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5%;
+    @include flex(row, center, center);
+    
+  
+    span{
+        width: 20px;
+        height: 20px;
+        background-image: url(icons-main-reliability/phone.svg);
+        background-repeat: no-repeat;
+    }
+    p{
+        color:#00730C;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 19px;
+    }
+ }
+}
+
+@media(min-width:1920px){
+    .reliable-gardening{
+        width: 1410px;
+        height: 307px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    
+    .img-reliable-gardening{
+        width: 1410px;
+        height: 247px;
+       
+        
+        .img1-reliable-gardening{
+            opacity: 0;
+            visibility: hidden;
+        }
+        .img2-reliable-gardening{
+            opacity: 1;
+            visibility: visible; 
+            position: absolute;
+            top: 20px;
+            left: 0px;
+          
+        }
+        
+    }
+    .text-button-reliable-gardening{
+    width: 703px;
+    height: 90px;
+    @include flex(row, center, space-between);
+    position: absolute;
+    top: 100px;
+    right: 70px;
+    }
+    
+    .text-reliable-gardening{
+    width: 448px;
+    height: 90px;
+    
+        h4{
+            font-size: 33px; 
+            line-height: 45px;
+            text-align: start;
+        }
+    }
+    .button-reliable-gardening{
+     width: 170px;
+     height: 50px;
+     
+    
+     button{
+        width: 170px;
+        height: 50px;
+     
+        @include flex(row, center, center);
+        
+      
+        span{
+            width: 30px;
+            height: 30px;
+            background-image: url(icons-main-reliability/icon-phone-web.svg);
+        }
+        p{
+            font-size: 18px;
+            line-height: 24px;
+        }
+     }
+    }
+
 }
